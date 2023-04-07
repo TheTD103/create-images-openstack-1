@@ -25,13 +25,6 @@ Start libvirt
 systemctl start --now libvirtd
 ```
 
-Disable ipv6
-```sh
-echo "net.ipv6.conf.all.disable_ipv6 = 1" >> /etc/sysctl.conf
-echo "net.ipv6.conf.default.disable_ipv6 = 1" >> /etc/sysctl.conf
-sysctl -p
-```
-
 Enable `X11Forwarding yes` trong `/etc/ssh/sshd_config`
 ```sh
 X11Forwarding yes
